@@ -1,0 +1,33 @@
+#fillForm {
+	float: left;
+	padding: 20px;
+}
+
+#preView {
+	float: right;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td {
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.hline {
+	text-align: center;
+}
+
+tr.emp {
+	font-weight: bold;
+	border: 2px solid black;
+	text-align: left;
+}
+
+.text {
+	text-align: left;
+	font-weight: bold;
+}
