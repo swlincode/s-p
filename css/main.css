@@ -1,12 +1,23 @@
+.css_table{
+	display: table;
+}
 #fillForm {
-	float: left;
-	padding: 20px;
-}
-
+/*	float: left;*/
+	display: table-cell;
+	padding: 10px;
+}	
 #preView {
-	float: right;
+/*	float: left;*/
+	display:table-cell;
+/*	background-color:aliceblue;*/
+	padding:10px;
 }
-
+#preView .title{
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	font-family:monospace
+}
 table {
 	border-collapse: collapse;
 	width: 100%;
@@ -30,4 +41,9 @@ tr.emp {
 .text {
 	text-align: left;
 	font-weight: bold;
+}
+
+#inputName {
+ border:none;
+	border-style:none;
 }
