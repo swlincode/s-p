@@ -5,66 +5,64 @@
 	<meta charset="UTF-8">
 	<title>Shiiping Document</title>
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-
 <body>
-<div class="css_table">
-	<div id="fillForm">
-		<pre>
-Content 1:<br>
-<input style="text" id="inputName" size="20"><br>
-quantity:
-<input type="number" name="quantity"  size="20" min="1" max="5">
-<pre>
-	
-</pre>
-</pre>
-	</div>
-	<div id="preView">
-	<div class="title">Print Preview</div>
-		<table>
-			<tr>
-				<th colspan="5">Shipping Document() Fax:</th>
-			</tr>
-			<tr>
-				<td colspan="2">From(Shipper):</td>
-				<td>Tel:</td>
-				<td>Mobile:</td>
-			</tr>
-			<tr class="emp">
-				<td colspan="2" width=40%>To(Receiver):<br>Tel:
-				</td>
-				<td colspan="3">Delivery address:<br>Desired delivery date:
-				</td>
-			</tr>
-			<tr class="hline">
-				<td width=1%>No.</td>
-				<td>Contents</td>
-				<td>Quantity</td>
-				<td colspan="2">Description (Expiry date, Batch)</td>
-			</tr>
-			<tr class="text">
-				<td width=1>1.</td>
-				<td><p id="pName"></p></td>
-				<td></td>
-				<td colspan="2"></td>
-			</tr>
-			<tr class="text">
-				<td>2.</td>
-				<td></td>
-				<td></td>
-				<td colspan="2"></td>
-			</tr>
-			<tr>
-				<td colspan="2">Labelling ◻︎Yes◻︎No</td>
-				<!--			<td></td>-->
-				<td colspan="3">Shipper's signature:<br>
-					<font size=1px>Date of shipment:YY/MM/DD</font>
-				</td>
-			</tr>
-		</table>
-	</div>
+	<div>
+		<div id="fillForm" class="col-sm-4">
+			Content 1:<br>
+			<input style="text" id="inputName" size="20"><br> quantity:
+			<input type="number" name="quantity" size="20" min="1" max="5">
+		</div>
+		<div class="col-sm-8">
+			<!--	<div class="title">Print Preview</div>-->
+			<table id="preView" class="table table-bordered">
+				<tr>
+					<th colspan="5">Shipping Document() Fax:</th>
+				</tr>
+				<tr>
+					<td colspan="2">From(Shipper):</td>
+					<td>Tel:</td>
+					<td>Mobile:</td>
+				</tr>
+				<tr class="emp">
+					<td colspan="2" width=40%>To(Receiver):<br>Tel:
+					</td>
+					<td colspan="3">Delivery address:<br>Desired delivery date:
+					</td>
+				</tr>
+				<tr class="hline">
+					<td width=1%>No.</td>
+					<td>Contents</td>
+					<td>Quantity</td>
+					<td colspan="2">Description (Expiry date, Batch)</td>
+				</tr>
+				<tr class="text">
+					<td width=1>1.</td>
+					<td>
+						<p id="pName"></p>
+					</td>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr class="text">
+					<td>2.</td>
+					<td></td>
+					<td></td>
+					<td colspan="2"></td>
+				</tr>
+				<tr>
+					<td colspan="2">Labelling ◻︎Yes◻︎No</td>
+					<!--			<td></td>-->
+					<td colspan="3">Shipper's signature:<br>
+						<font size=1px>Date of shipment:YY/MM/DD</font>
+					</td>
+				</tr>
+			</table>
+			<a href="#" id="printBtn" class="btn btn-primary btn-lg">
+				<span class="glyphicon glyphicon-print"></span> Print</a>
+		</div>
 	</div>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

@@ -1,15 +1,23 @@
+	@media print {
+		body {
+			visibility: hidden;
+		}
+		#preView {
+			visibility: visible;
+		}
+	}
+	/*this is previous version */
+	/*
 .css_table{
 	display: table;
 }
 #fillForm {
-/*	float: left;*/
 	display: table-cell;
 	padding: 10px;
 }	
 #preView {
-/*	float: left;*/
 	display:table-cell;
-/*	background-color:aliceblue;*/
+	background-color:aliceblue;
 	padding:10px;
 }
 #preView .title{
@@ -47,3 +55,4 @@ tr.emp {
  border:none;
 	border-style:none;
 }
+*/
